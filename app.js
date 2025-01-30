@@ -28,8 +28,8 @@ app.get('/', (req, res) => {
   const days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diffTime / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((diffTime / (1000 * 60)) % 60);
-
-  res.render('index', { days, hours, minutes });
+  const seconds = Math.floor((diffTime / 1000) % 60);
+  res.render('index', { days, hours, minutes, seconds });
 });
 
 app.use((req, res) => {

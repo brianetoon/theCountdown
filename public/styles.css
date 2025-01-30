@@ -2,22 +2,22 @@
 
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Courier New', Courier, monospace;  /* Default font */
-  }
-  
-  /* Custom Font */
-  @font-face {
-    font-family: 'Digital-7';
-    src: url('/fonts/digital-7.ttf') format('truetype');
-  }
-  
- .wires {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace; /* Default font */
+}
+
+/* Custom Font */
+@font-face {
+  font-family: "Digital-7";
+  src: url("/fonts/digital-7.ttf") format("truetype");
+}
+
+.wires {
   position: relative;
   height: 100vh;
   display: flex;
@@ -27,77 +27,86 @@
 }
 
 .wires::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/imgs/wires.jpg');
+  background-image: url("./imgs/sand-macro-time-watch-wallpaper-preview.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* 30% opacity */
+  opacity: 0.8; /* 30% opacity */
   z-index: -1;
 }
-  /* Countdown Container */
+/* Countdown Container */
 .countdown-container {
-    width: 50%;
-    text-align: center;
-    color: #ff0000;
-    text-shadow: 0 0 10px #ff0000;
-    font-family: 'Digital-7', sans-serif;  /* Apply the custom font */
-  }
-  
-  /* Countdown Header */
-  .countdown-header h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #ff0000;
-    text-shadow: 0 0 10px #ff0000;
-  }
+  width: 50%;
+  text-align: center;
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000;
+  font-family: "Digital-7", sans-serif; /* Apply the custom font */
+}
 
-  .countdown-display {
-    background-color: #222;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    color: #ff0000;
-    text-shadow: 0 0 10px #ff0000;
-    font-family: 'Digital-7', sans-serif; 
-  }
+/* Countdown Header */
+
+
+
+.countdown-header h1 {
+  color: #e98a0f;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  letter-spacing: 5px;
+  text-shadow: 0 0 5px #201b1b;
   
-  .digit {
-    font-size: 8rem;
-    line-height: 1;
-  }
-  
-  .label {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* 404 page */
-  .error-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #222;
-    color: #fff;
-  }
-  
-  .error-page h1 {
-    font-size: 10rem;
-  }
-  
-  .error-page p {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-  
-  /* .error-page img {
+}
+
+
+.countdown-display {
+  display: flex;
+  justify-content: center;
+  background-color: #221d1d;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #e98a0f;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #201b1b;
+
+}
+
+.digit {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.label {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* 404 page */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #222;
+  color: #fff;
+}
+
+.error-page h1 {
+  font-size: 10rem;
+}
+
+.error-page p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* .error-page img {
     margin-top: 2rem;
     max-width: 50%;
   } */
-  
