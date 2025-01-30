@@ -22,8 +22,11 @@
     "nodemon": "^3.1.9"
   },
   "dependencies": {
+    "@netlify/functions": "^3.0.0",
+    "@types/express": "^5.0.0",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "serverless-http": "^3.2.0"
   }
 }
