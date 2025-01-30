@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Countdown to Launch</title>
-  <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-  <div class="wires">
-    <div class="countdown-container">
-      <div class="countdown-header">
-        <h1>Countdown Until Epoch Time: 1747856400</h1>
-        <p>2025/03/21:09MST</p>
-      </div>
-      <div class="countdown-display">
-        <div class="digit"><%= days %></div>
-        <div class="label">Days</div>
-        <div class="digit"><%= hours %></div>
-        <div class="label">Hours</div>
-        <div class="digit"><%= minutes %></div>
-        <div class="label">Minutes</div>
+  <head>
+    <title>Countdown to Launch</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="wires">
+      <div class="countdown-container">
+        <div class="countdown-header">
+          <h1>Countdown Until : 21/03/2025 </h1>
+          
+        </div>
+        <div class="countdown-display">
+          <label class="label"
+            >Days
+            <div class="digit digit-days"><%= days %></div>
+          </label>
+
+          <label class="label"
+            >Hours
+            <div class="digit digit-hours"><%= hours %></div>
+          </label>
+          <label class="label"
+            >Min
+            <div class="digit digit-min"><%= minutes %></div>
+          </label>
+          <label class="label"
+            >Sec
+            <div class="digit digit-seconds"><%= seconds %></div>
+          </label>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="/script.js"></script>
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>
