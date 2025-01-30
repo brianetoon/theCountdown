@@ -1,0 +1,103 @@
+/* public/styles.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;  /* Default font */
+  }
+  
+  /* Custom Font */
+  @font-face {
+    font-family: 'Digital-7';
+    src: url('/fonts/digital-7.ttf') format('truetype');
+  }
+  
+ .wires {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wires::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/imgs/wires.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* 30% opacity */
+  z-index: -1;
+}
+  /* Countdown Container */
+.countdown-container {
+    width: 50%;
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+    font-family: 'Digital-7', sans-serif;  /* Apply the custom font */
+  }
+  
+  /* Countdown Header */
+  .countdown-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+  }
+
+  .countdown-display {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+    font-family: 'Digital-7', sans-serif; 
+  }
+  
+  .digit {
+    font-size: 8rem;
+    line-height: 1;
+  }
+  
+  .label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* 404 page */
+  .error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .error-page h1 {
+    font-size: 10rem;
+  }
+  
+  .error-page p {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  
+  /* .error-page img {
+    margin-top: 2rem;
+    max-width: 50%;
+  } */
+  
