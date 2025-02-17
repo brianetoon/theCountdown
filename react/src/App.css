@@ -1,0 +1,138 @@
+/* public/styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace; /* Default font */
+}
+
+/* Custom Font */
+@font-face {
+  font-family: "Digital-7";
+  src: url("../public/fonts/digital-7.ttf") format("truetype");
+}
+
+.wires {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wires::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/sand-macro-time-watch-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* 30% opacity */
+  z-index: -1;
+}
+/* Countdown Container */
+.countdown-container {
+  width: 80%;
+  text-align: center;
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000;
+  font-family: "Digital-7", sans-serif; /* Apply the custom font */
+}
+
+/* Countdown Header */
+
+
+
+.countdown-header h1 {
+  color: #e98a0f;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  letter-spacing: 5px;
+  text-shadow: 0 0 5px #201b1b;
+  
+}
+
+
+.countdown-display {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.digit {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.label {
+  font-size: 150%;
+  margin-bottom: 10%;
+  padding: 2%;
+  width: 150%;
+}
+
+/* 404 page */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #222;
+  color: #fff;
+}
+
+.error-page h1 {
+  font-size: 10rem;
+}
+
+.error-page p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* .error-page img {
+    margin-top: 2rem;
+    max-width: 50%;
+  } */
+
+  .arrange {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #221d1d;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    color: #e98a0f;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #201b1b;
+  }
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  width: 10%;
+}
+
+
+
+.clock {
+  display: flex;
+  justify-content: space-around;
+}
